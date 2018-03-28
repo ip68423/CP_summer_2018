@@ -14,5 +14,9 @@ public class ForLoop {
             System.out.println("i=" + i);
             if (i==0) break;
         }
+        int i =0;
+        for (i=0;i<5;i++) {
+            System.err.println("err i=" + i );
+        }
     }
 }
