@@ -8,8 +8,21 @@ public class GuiInput {
         JOptionPane.showMessageDialog(null, "Hello!");
       //  String myText = JOptionPane.showInputDialog("What is your name:");
         // JOptionPane.showMessageDialog(null, "Hello!" +myText + "!!!");
-        String sHeight = JOptionPane.showInputDialog("What is your height in cm");
-        Double height = Double.parseDouble(sHeight);
+      //  String sHeight = JOptionPane.showInputDialog("What is your height in cm");
+        Double height = null;
+
+        while (height==null){
+            try{
+                String sHeight = JOptionPane.showInputDialog("What is your height in cm");
+                height = Double.parseDouble(sHeight);
+            } catch (NumberFormatException ne) {
+                JOptionPane.showMessageDialog(null, ne.getMessage()) ;
+            } catch (NullPointerException nee){
+
+            }
+
+        }
+        //Double height = Double.parseDouble(sHeight);
         //Integer.parseInt(sHeight);
         //Long.parseLong(sHeight);
         JOptionPane.showMessageDialog(null, "Your height in cm: " + height/100);
