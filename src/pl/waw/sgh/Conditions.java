@@ -33,7 +33,7 @@ public class Conditions {
         }
         int c = a ==5 ? 10 : 0;
         if (a==5) {
-            c = 10
+            c = 10;
         } else {
             c = 0;
         }
