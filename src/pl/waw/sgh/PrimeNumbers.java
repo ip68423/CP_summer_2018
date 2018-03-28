@@ -2,7 +2,7 @@ package pl.waw.sgh;
 
 public class PrimeNumbers {
     public static void main(String[] args) {
-    int count=0;
+    int count = 0;
         String PrimeNumbers = "";
         for(int i=1; i < 1000; i++) {
 
