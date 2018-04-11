@@ -18,6 +18,8 @@ public class FileOps {
         Map<String, String> env = System.getenv();
         System.out.println(user);
 
+
+
         System.out.println(env.get("HOMEPATH"));
         System.out.println(curDir);
     }
